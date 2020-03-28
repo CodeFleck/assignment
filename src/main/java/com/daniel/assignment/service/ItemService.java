@@ -14,8 +14,8 @@ public class ItemService {
     ItemDao itemDao = new ItemDao();
 
     public List<Item> getItems() {
-        List<Item> listOfCountries = itemDao.getAllItems();
-        return listOfCountries;
+        List<Item> listOfItems = itemDao.getAllItems();
+        return listOfItems;
     }
 
     public Item getItem(String itemName) {
