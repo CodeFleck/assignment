@@ -3,6 +3,7 @@ package com.daniel.assignment.service;
 import com.daniel.assignment.dao.ItemDao;
 import com.daniel.assignment.model.Item;
 import com.daniel.assignment.util.ItemUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
@@ -11,7 +12,8 @@ import java.util.List;
 @Service
 public class ItemService {
 
-    ItemDao itemDao = new ItemDao();
+    @Autowired
+    ItemDao itemDao;
 
     public List<Item> getItems() {
         List<Item> listOfItems = itemDao.getAllItems();

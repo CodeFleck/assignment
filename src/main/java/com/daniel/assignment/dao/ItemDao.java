@@ -1,11 +1,14 @@
 package com.daniel.assignment.dao;
 
 import com.daniel.assignment.model.Item;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+@Repository
 public class ItemDao {
-    private static final Map<String, Item> itemMap = new HashMap<String, Item>();
+
+    private static final Map<String, Item> itemMap = new HashMap<>();
 
     static {
         initItems();
