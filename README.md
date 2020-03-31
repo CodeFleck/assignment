@@ -3,8 +3,6 @@ This app runs with Java 11.
 To be able to run this springboot app you will need to first build it. To build and package into a single executable Jar file with Maven, use the below command.
 You will need to run it from the project folder which contains the pom.xml file.
 
-`mvn install`
-
 `mvn spring-boot:run`
 
 This assignment was created with Java and Springboot. It simulates the backend of an online shop where an item can be bought.
